@@ -16,6 +16,13 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+body.light {
+    --deepBlue: #E2E2B6;
+    --blue: #6EACDA;
+    --skyBlue: #03346E;
+    --stoneWhite: #021526;
+}
+
 a {
     color: var(--skyBlue);
     text-decoration: none;
