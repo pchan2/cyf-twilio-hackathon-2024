@@ -1,0 +1,71 @@
+:root {
+    --deepBlue: #021526;
+    --blue: #03346E;
+    --skyBlue: #6EACDA;
+    --stoneWhite: #E2E2B6;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--deepBlue);
+    color: var(--stoneWhite);
+}
+
+a {
+    color: var(--skyBlue);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1366px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    /* centres the container */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1536px) {
+    .container {
+        max-width: 1366px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+}
