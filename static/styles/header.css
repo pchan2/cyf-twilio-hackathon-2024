@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.brandName {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    color: var(--stoneWhite)
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.themeToggle {
+    width: 40px;
+    height: 23px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--blue);
+    border: 0.5px solid var(--skyBlue);
+    padding: 5px;
+    position: relative;
+}
+
+.themeToggle:hover {
+    background-color: var(--deepBlue);
+
+    .ball {
+        background-color: var(--blue);
+        border: 1px solid var(--skyBlue);
+    }
+}
+
+.ball {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-color: var(--skyBlue);
+    border: 1px solid var(--blue);
+}
+
+.logOutButton {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5%;
+    color: var(--deepBlue);
+    background-color: var(--stoneWhite);
+    border: 1px solid var(--stoneWhite);
+}
+
+.logOutButton:hover {
+    color: var(--stoneWhite);
+    background-color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+    border-left: 1px solid var(--blue);
+}
