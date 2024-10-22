@@ -76,8 +76,6 @@
     height: 40px;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    border: none;
     border-radius: 5%;
     color: var(--deepBlue);
     background-color: var(--stoneWhite);
