@@ -69,6 +69,8 @@
     font-size: 15px;
     font-weight: bolder;
     height: 40px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     border: none;
     border-radius: 5%;
