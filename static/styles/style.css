@@ -13,6 +13,7 @@
 body {
     background-color: var(--deepBlue);
     color: var(--stoneWhite);
+    font-family: "Roboto", sans-serif;
 }
 
 a {
