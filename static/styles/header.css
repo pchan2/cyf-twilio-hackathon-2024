@@ -3,6 +3,9 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
+    background-color: var(--deepBlue)b0;
+    backdrop-filter: blur(5px);
+    padding-bottom: 15px;
 }
 
 .logoContainer {
