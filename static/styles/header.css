@@ -69,6 +69,10 @@
 }
 
 .logOutButton {
+    display: none;
+}
+
+.loggedIn .logOutButton {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 15px;
