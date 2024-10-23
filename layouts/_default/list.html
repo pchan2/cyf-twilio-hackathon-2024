@@ -1,0 +1,22 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/styles/list.css">
+<div class="list">
+    {{ range .Paginator.Pages }}
+        <div class="listItem">
+            <div class="listItemLeft">
+                <h1 class="listTitle">{{ .Title }} for {{ .Params.recipientName }}</h1>
+            </div>
+            <div class="listItemRight">
+                <div class="listItemRightText">
+                    <p class="listItemAddress">Address: {{ .Params.address }}</p>
+                    <p class="listItemNumberOfItems">Number of items: {{ .Params.numberOfItems }}</p>
+                    <p class="listItemNotes">Notes: {{ .Params.notes }}</p>
+                    <p class="listItemScore"><mark>Score: {{ .Params.score }}/10</mark></p>
+                </div>
+                <img class="pingButton" src="/images/logo_white_background.webp" alt="ping button" loading="lazy" />
+            </div>
+        </div>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}
