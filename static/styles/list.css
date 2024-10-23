@@ -1,0 +1,88 @@
+.list {
+    display: none;
+}
+
+.loggedIn .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.listItem {
+    border-bottom: 1px solid var(--skyBlue);
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.listItemLeft,
+.listItemRight {
+    flex: 5;
+    line-height: 30px;
+}
+
+.listItemRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listItemScore mark {
+    background-color: var(--stoneWhite);
+    color: var(--deepBlue);
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.pingButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--deepBlue);
+    cursor: pointer;
+}
+
+.pingButton:hover {
+    border: 10px solid var(--skyBlue);
+}
+
+.light .pingButton {
+    border: 1px solid var(--skyBlue);
+}
+
+.light .pingButton:hover {
+    border: 10px solid var(--skyBlue);
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.page-item {
+    border: 1px solid grey;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.page-item.active {
+    background-color: var(--text);
+    color: var(--bg);
+}
+
+.page-item.disabled {
+    background-color: #313845;
+    cursor: not-allowed;
+}
