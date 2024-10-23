@@ -15,6 +15,11 @@
 .logo {
     width: 60px;
     border-radius: 50%;
+    border: 1px solid var(--deepBlue);
+}
+
+.light .logo {
+    border: 1px solid var(--skyBlue);
 }
 
 .brandName {
